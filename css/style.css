@@ -260,16 +260,22 @@ p {
   font-weight: 400;
 }
 
-p .plazas{
+p.plazas{
 	text-align:center;
-	color:#CCC;
+}
+.caption.detail .date-of-post{
+    font-size: 20px;
+    text-align: center;
 }
 
 p .plazas2{
 	text-align:center;
 	color:#fff;
 }
-
+.item .icon-links p.plazas{
+  color: #fff;
+  text-align: center;
+}
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -939,7 +945,9 @@ h3 {
 	background:#1e8080;
 	height:330px;
 	text-align:center;
-	padding-top:65px;
+	padding:65px 0;
+  display: table;
+  width: 100%;
 }
 
 .header-background {
@@ -958,7 +966,9 @@ h3 {
 .header-background.cdmx{
 	background:url(../images/bg-2_cdmx.JPG);
 }
-
+.header-background.recetas{
+	background:url(../images/bg-1.jpg);
+}
 .header-background.guerrero{
 	background:url(../images/bg-2_guerrero.jpg);
 }
@@ -1133,12 +1143,15 @@ h3 {
  * Social Icon Style
  * ======================================
  */
+.social-icon{
+  padding: 0;
+}
 .social-icon strong {
   display: block;
 }
 .social-icon ul li {
-  float: left;
-  margin-right: 10px;
+  float: right;
+  margin-left: 10px;
 }
 .social-icon ul li a {
   margin-top: 5px !important;
@@ -1149,7 +1162,7 @@ h3 {
   color: #fff;
 }
 .social-icon ul li:last-child {
-  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 .social-icon .fa {
   font-size: 20px;
@@ -1721,7 +1734,6 @@ footer .footer-body .logo {
   text-align: center;
 }
 footer .footer-body .logo img {
-  max-width: 550px !important;
   margin: auto;
   margin-bottom: 30px;
   display: initial;

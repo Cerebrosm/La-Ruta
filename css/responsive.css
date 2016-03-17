@@ -1,6 +1,6 @@
 /**
  * ======================================
- * VARIABLES 
+ * VARIABLES
  * ======================================
  */
 @media (max-width: 767px) {
@@ -9,12 +9,39 @@
 	 * Header Navbar Style
 	 * =============================
 	 */
+   .header-background {
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-position: center 0;
+     background-attachment: fixed;
+     background-repeat: 'no-repeat';
+     background-color: #FFF;
+     height: 100vh;
+ }
   .header-nav ul {
     margin: 0 -15px !important;
   }
   .header-nav ul li a {
     margin-left: -135px;
   }
+
+  /**
+   *
+   * Cronometro
+   *
+   */
+   #cronometro {
+     background: #1e8080;
+     text-align: center;
+     padding: 65px 10px;
+     display: table;
+   }
+   #cronometro h1{
+     font-size: 2.625em;
+     line-height: 1;
+   }
   /**
 	 * =============================
 	 * Schedule Style
@@ -145,13 +172,13 @@
     background-color: rgba(255, 255, 255, 0.15) !important;
   }
   .header-nav-2 .navbar-header a img {
-	width: 85px;
-	padding: 10px;
+	width: 160px;
+	padding: 0;
 	position: relative;
 	z-index: 3;
   }
   .header-nav-2 .navbar-header a span {
-    padding: 48px 10px 10px 10px;
+    padding: 10px 0 0 0;
   }
   .header-nav-2 .nav {
     overflow: hidden;
@@ -160,7 +187,7 @@
     margin-right: auto;
   }
   .header-nav-2 .nav li {
-    float: left;
+    float: none;
     overflow: hidden;
   }
   .header-nav-2 .nav li a {
@@ -173,7 +200,7 @@
     padding-top: 0px;
   }
   .header-nav-2.navbar-home .navbar-header a img {
-    padding: 10px 10px 10px 10px;
+    padding: 0;
   }
   .header-nav-2.navbar-home .nav {
     margin-top: 20px !important;

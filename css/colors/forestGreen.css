@@ -682,17 +682,23 @@ footer {
 
 .header-nav-2.navbar-home .headersocial .nav li a, .headersocial .nav li a{
 	color:#F00;
+  border: 1px solid #F00;
+  background-color: transparent;
+  width: 50px;
 }
-
+.header-nav-2.navbar-home .headersocial .nav li a:hover, .headersocial .nav li a:hover{
+	color:#fff !important;
+  border: 1px solid #F00 !important;
+  background-color: #F00 !important;
+  width: 50px;
+}
+.header-nav-2.navbar-home .headersocial .nav li a:after, .headersocial .nav li a:after{
+  background-color: #F00 !important;
+}
 .header-nav-2.navbar-home .nav li .new-page:hover {
   background-color: transparent;
   color: #1e8080;
 }
-
-.header-nav-2.navbar-home .headersocial .nav li a:hover, .headersocial .nav li a:hover{
-	color:#FFF !important;
-}
-
 
 @media (max-width: 767px) {
   /**
