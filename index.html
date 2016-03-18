@@ -29,7 +29,7 @@
 
 
         <!-- BOOTSTRAP CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 
 
         <!-- FONT ICONS -->
@@ -80,6 +80,13 @@
         <!--Start: Header Area
         ==============================-->
         <header class="header-background header header-2" id="header" data-stellar-background-ratio="0.5">
+
+<!--          <div class="fullscreen-bg">
+            <video width="100%" height="100%" autoplay loop>
+             <source src="videos/video_480_comepesca.mp4" type="video/mp4">
+            </video>
+          </div>-->
+
             <div class="fix header-overlay overlay-color">
 
                 <!-- Start: Navbar Area  -->
@@ -108,17 +115,34 @@
                               </ul>
                             </div>
 
+                            <div class="clearfix"></div>
+
                             <div class="collapse navbar-collapse" id="finiti-navbar-collapse">
                                 <ul id="navbar-nav-2" class="nav navbar-nav navbar-right">
-                                    <li class="section-selector-2"><a href="#two-cols-description-with-slider">LA RUTA</a></li>
-                                    <li class="dropdown">LA RUTA
+                                    <li class="section-selector-2"></li>
+
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LA RUTA <span class="caret"></span></a>
                                       <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#two-cols-description-with-slider">LA RUTA</a></li>
+                                        <li><a href="#que-es-la-ruta">¿Qué es La Ruta?</a></li>
+                                        <li><a href="#como-participo">¿Cómo participo?</a></li>
                                       </ul>
                                     </li>
+
                                     <li class="section-selector-2"><a href="#galeria">GALERIA</a></li>
-                                    <li class="section-selector-2"><a href="#informacioncomepesca">COMEPESCA</a></li>
+
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMEPESCA <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#informacioncomepesca">COMEPESCA</a></li>
+                                        <li><a href="#que-es-comepesca">¿Qué es Comepesca?</a></li>
+                                        <li><a href="#como-me-afilio">¿Cómo me afilio?</a></li>
+                                        <li><a href="#beneficios">Beneficios</a></li>
+                                      </ul>
+                                    </li>
+
+                                    <li class="section-selector-2"></li>
                                     <li class="section-selector-2"><a href="#plazas_menu">PLAZAS</a></li>
                                     <li class="section-selector-2"><a href="#our-featured">VIDEO</a></li>
                                     <li class="section-selector-2"><a href="#blog-section">NOTICIAS</a></li>
@@ -186,7 +210,7 @@
                             <div class="section-header align-left">
 
                                 <h2 class="section-heading">La Ruta</h2>
-                                <p><strong>¿Qué es La Ruta?</strong></p>
+                                <p id="que-es-la-ruta"><strong>¿Qué es La Ruta?</strong></p>
 
                             </div>
                             <!-- End: Section Header -->
@@ -230,7 +254,7 @@
                             <div class="section-header align-left">
 
                                 <h2 class="section-heading">La Ruta</h2>
-                                <p><strong>¿Cómo participo?</strong></p>
+                                <p id="como-participo"><strong>¿Cómo participo?</strong></p>
 
                             </div>
                             <!-- End: Section Header -->
@@ -332,13 +356,13 @@
                             <div class="section-header align-left">
 
                                 <section id="informacioncomepesca"><h2 class="section-heading">Comepesca</h2></section>
-                                <p><strong>¿Qué es Comepesca?</strong></p>
+                                <p id="que-es-comepesca"><strong>¿Qué es Comepesca?</strong></p>
 
                             </div>
                             <!-- End: Section Header -->
 
                             <!-- Start: .chaecklist -->
-                            <p align="left">COMEPESCA es el Consejo Mexicano de Promoción de los Productos Pesqueros y Acuícolas, una asociación civil creada en el año 2003, integrada por empresarios de la cadena productiva y comercial del sector pesquero y acuícola compuesta por acuicultores, armadores, procesadores, distribuidores y comercializadores de productos pesqueros y acuícolas de todo el país, incluyendo diversos organismos educativos, científicos y profesionales.<br><strong>¿Cómo me afilio?</strong><br>1. Afíliate en www.comepesca.com<br>2. Llena tu formato de solicitud de ingreso. Descárgalo aquí.<br>3. Envíalo a contacto.comepesca@gmail.com<br>*Consulta el esquema de cuotas</p>
+                            <p align="left">COMEPESCA es el Consejo Mexicano de Promoción de los Productos Pesqueros y Acuícolas, una asociación civil creada en el año 2003, integrada por empresarios de la cadena productiva y comercial del sector pesquero y acuícola compuesta por acuicultores, armadores, procesadores, distribuidores y comercializadores de productos pesqueros y acuícolas de todo el país, incluyendo diversos organismos educativos, científicos y profesionales.<br><strong id="como-me-afilio">¿Cómo me afilio?</strong><br>1. Afíliate en www.comepesca.com<br>2. Llena tu formato de solicitud de ingreso. Descárgalo aquí.<br>3. Envíalo a contacto.comepesca@gmail.com<br>*Consulta el esquema de cuotas</p>
 
                         </div>
 
@@ -375,7 +399,7 @@
                             <div class="section-header align-left">
 
                                 <h2 class="section-heading">Comepesca</h2>
-                                <p><strong>Beneficios</strong></p>
+                                <p id="beneficios"><strong>Beneficios</strong></p>
 
                             </div>
                             <!-- End: Section Header -->
@@ -627,7 +651,7 @@
 
                             <div class="view grid">
                                 <figure class="effect-zoe">
-                         
+
                         <!-- Image Goes Here -->
                                     <a href="cdmx.html"><img src="images/speakers-img/1.jpg" alt="speakers"/></a>
 
@@ -650,8 +674,8 @@
                         <!-- Item 2 -->
                         <div class="item">
                             <div class="view grid">
-                                <figure class="effect-zoe">        
-                                
+                                <figure class="effect-zoe">
+
                     </div>
                     <!-- End: #slider -->
                 </div>
@@ -1047,7 +1071,7 @@
         <script type="text/javascript">
         $(document).ready(function(){
           var header = $("header");
-          headerBgAnimator(header, "/images/bg-1.jpg", "/images/bg-2_cdmx.JPG", "/images/bg-2_guerrero.jpg", "/images/bg-3.jpg");
+          //headerBgAnimator(header, "/images/bg-1.jpg", "/images/bg-2_cdmx.JPG", "/images/bg-2_guerrero.jpg", "/images/bg-3.jpg");
         });
         </script>
     </body>
