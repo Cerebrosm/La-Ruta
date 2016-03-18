@@ -1,6 +1,29 @@
+var countHeader = 0;
+
+function headerBgAnimator(thisO, imageA, imageB, imageC, imageD){
+
+  var arrayImages = [imageA, imageB, imageC, imageD];
+
+   setInterval(function(){
+     console.log(countHeader);
+     console.log(arrayImages[countHeader]);
+     var url = "url('"+ arrayImages[countHeader] +"')";
+     $(thisO).css("background-image", url);
+     countHeader = countHeader + 1;
+     if(countHeader == 4){
+       countHeader = 0;
+     }
+   }, 3000);
+
+}
+
 $(function() {
 
   'use strict';
+
+  /*
+   * Function: Header bg animator
+   */
 
   /**
    * =======================================

@@ -252,7 +252,10 @@ p {
   font-weight: 300;
   text-align:justify;
 }
-
+#header{
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+}
 #principal {
 	text-align:center;
   color: #fff;

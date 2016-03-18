@@ -111,6 +111,12 @@
                             <div class="collapse navbar-collapse" id="finiti-navbar-collapse">
                                 <ul id="navbar-nav-2" class="nav navbar-nav navbar-right">
                                     <li class="section-selector-2"><a href="#two-cols-description-with-slider">LA RUTA</a></li>
+                                    <li class="dropdown">LA RUTA
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                      </ul>
+                                    </li>
                                     <li class="section-selector-2"><a href="#galeria">GALERIA</a></li>
                                     <li class="section-selector-2"><a href="#informacioncomepesca">COMEPESCA</a></li>
                                     <li class="section-selector-2"><a href="#plazas_menu">PLAZAS</a></li>
@@ -1058,7 +1064,12 @@
         <!-- Custom Script
         ==========================================-->
         <script src="js/custom-scripts.js"></script>
-
+        <script type="text/javascript">
+        $(document).ready(function(){
+          var header = $("header");
+          headerBgAnimator(header, "/images/bg-1.jpg", "/images/bg-2_cdmx.JPG", "/images/bg-2_guerrero.jpg", "/images/bg-3.jpg");
+        });
+        </script>
     </body>
 
 </html>
