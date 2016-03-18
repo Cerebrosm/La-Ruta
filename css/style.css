@@ -1003,6 +1003,16 @@ h3 {
 	text-align:center;
 }
 
+.header h2.texto_foto{
+	text-align:center;
+	color:#FFF;
+}
+
+.header h3.texto_foto{
+	text-align:center;
+	color:#FFF;
+}
+
 .header p {
   color:#fff;
   font-size: 19px;
@@ -2610,7 +2620,7 @@ footer .footer-body .copyright p .fa {
   float: left;
 }
 .post-api-gelary li {
-  width: 33.3333%;
+  width: 100%;
   float: left;
 }
 .post-api-gelary li img {
