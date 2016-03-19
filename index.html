@@ -687,7 +687,8 @@
         =====================================-->
 
         <section id="mapa">
-          <img id="mapa" src="images/mapa.jpg" alt="mapas" />
+          <img id="mapa" width="600px" height="auto" src="images/mapa.jpg" alt="mapas" usemap="#imgmap201631819443"/>
+          <!--<map id="imgmap201631819443" name="imgmap201631819443"><area shape="circle" alt="baja-california" title="" coords="84,74,14" href="" target="_self" /><area shape="circle" alt="quintana-roo" title="" coords="490,561,15" href="" target="_self" /><area shape="circle" alt="" title="" coords="569,599,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="647,662,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="640,599,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="637,535,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="675,593,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="724,621,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="779,606,14" href="" target="_self" /></map>-->
         </section>
 
         <!-- Start: Our Featured Area
@@ -868,7 +869,7 @@
                                 <figure class="effect-zoe left">
 
                                     <!-- Image Goes Here -->
-                                    <a href="almejas.html"><img src="images/speakers-img/almejas.jpg" alt="speakers"/></a>
+                                    <a data-toggle="modal" data-target="#myModal" href="#"><img src="images/speakers-img/almejas.jpg" alt="speakers"/></a>
 
                                 </figure>
                             </div>
@@ -876,7 +877,7 @@
                             <div class="clearfix"></div>
 
                             <!-- Name and Company Goes Here -->
-                            <h3><a href="#">Almejas Chione</a></h3>
+                            <h3><a data-toggle="modal" data-target="#myModal" href="#">Almejas Chione</a></h3>
                             <p class="text-center">Mejillones con Chorizo</p>
 
                         </div>
@@ -921,7 +922,7 @@
                         </div>
                          <!-- Start Button -->
                     <div class="blog-page-btn defult-use-btn">
-                        <a href="#" class="btn btn-1 btn-top wow fadeInDown">Ver Más</a>
+                        <a href="recetas.html" class="btn btn-1 btn-top wow fadeInDown">Ver Más</a>
                     </div>
                     <!-- End: Button -->
 
@@ -1042,6 +1043,38 @@
         </footer>
         <!-- End: Footer Area
         =====================================-->
+
+        <!-- Modal -->
+        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Receta: Almejas Chione</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="images/speakers-img/almejas.jpg" alt="speakers">
+                  </div>
+
+                  <div class="col-md-8">
+                    <h4>Mejillones con Chorizo</h4>
+
+                    <p>Instrucciones</p>
+                    <ul>
+                      <li>. </li>
+                      <li>. </li>
+                      <li>. </li>
+                      <li>. </li>
+                      <li>. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- SCRIPTS
         ========================================-->

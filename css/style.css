@@ -856,6 +856,14 @@ h3 {
   margin-right: 1px;
   background-color: transparent;
 }
+.header-nav-2 .nav li a:hover,
+.header-nav-2 .nav li a:active,
+.header-nav-2 .nav li a:focus {
+  color: #fff;
+  font-weight: 400;
+  margin-right: 1px;
+  background-color: transparent;
+}
 .header-nav-2 .nav .dropdown-menu li a {
   color: #000;
 }
