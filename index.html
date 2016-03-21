@@ -81,11 +81,19 @@
         ==============================-->
         <header class="header-background header header-2" id="header" data-stellar-background-ratio="0.5">
 
-<!--          <div class="fullscreen-bg">
+          <div class="fullscreen-bg hidden-xs hidden-sm">
             <video width="100%" height="100%" autoplay loop>
-             <source src="videos/video_480_comepesca.mp4" type="video/mp4">
+             <source src="videos/comepesca.mp4" type="video/mp4">
             </video>
-          </div>-->
+          </div>
+
+          <div class="visible-xs-block">
+            <img class="img-responsive gif-header" src="gif/comepesca_mobile.gif"/>
+          </div>
+
+          <div class="visible-sm-block">
+            <img class="img-responsive img-header" src="images/bg-3.jpg"/>
+          </div>
 
             <div class="fix header-overlay overlay-color">
 
@@ -563,7 +571,7 @@
                             <div class="clearfix"></div>
 
                             <!-- Name and Company Goes Here -->
-                            <h3><a href="">Guadalajar</a></h3>
+                            <h3><a href="">Guadalajara</a></h3>
                             <p class="plazas">23 de Abril</p>
 
                         </div>
@@ -687,8 +695,7 @@
         =====================================-->
 
         <section id="mapa">
-          <img id="mapa" width="600px" height="auto" src="images/mapa.jpg" alt="mapas" usemap="#imgmap201631819443"/>
-          <!--<map id="imgmap201631819443" name="imgmap201631819443"><area shape="circle" alt="baja-california" title="" coords="84,74,14" href="" target="_self" /><area shape="circle" alt="quintana-roo" title="" coords="490,561,15" href="" target="_self" /><area shape="circle" alt="" title="" coords="569,599,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="647,662,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="640,599,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="637,535,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="675,593,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="724,621,14" href="" target="_self" /><area shape="circle" alt="" title="" coords="779,606,14" href="" target="_self" /></map>-->
+          <div id="mapdiv"></div>
         </section>
 
         <!-- Start: Our Featured Area
@@ -1097,7 +1104,9 @@
         <script src="js/jquery.counterup.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
-
+        <script src="http://www.amcharts.com/lib/3/ammap.js"></script>
+        <script src="http://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+        <script src="ammap/maps/js/mexicoLow.js" type="text/javascript"></script>
         <!-- Custom Script
         ==========================================-->
         <script src="js/custom-scripts.js"></script>
@@ -1105,6 +1114,170 @@
         $(document).ready(function(){
           var header = $("header");
           //headerBgAnimator(header, "/images/bg-1.jpg", "/images/bg-2_cdmx.JPG", "/images/bg-2_guerrero.jpg", "/images/bg-3.jpg");
+          var map = AmCharts.makeChart("mapdiv", {
+            "type": "map",
+            "theme": "none",
+            "backgroundAlpha": 1,
+          	"backgroundColor": "#17476A",
+            "dataProvider": {
+              "map": "mexicoLow",
+              "areas": [
+                {
+          				"id":"MX-AGU",
+                  "color": "#17476A"
+          			},
+          			{
+          				"id":"MX-BCN",
+                  "modalUrl": "baja-california.html",
+                  "selectable": true,
+                  "color": "#AD00AD"
+          			},
+          			{
+          				"id":"MX-BCS"
+          			},
+          			{
+          				"id":"MX-CAM"
+          			},
+          			{
+          				"id":"MX-CHP"
+          			},
+          			{
+          				"id":"MX-CHH"
+          			},
+          			{
+          				"id":"MX-COA"
+          			},
+          			{
+          				"id":"MX-COL"
+          			},
+          			{
+          				"id":"MX-DIF",
+                  "modalUrl": "cdmx.html",
+                  "selectable": true,
+                  "color": "#3CFF0F"
+          			},
+          			{
+          				"id":"MX-DUR"
+          			},
+          			{
+          				"id":"MX-GUA"
+          			},
+          			{
+          				"id":"MX-GRO",
+                  "modalUrl": "guerrero.html",
+                  "selectable": true,
+                  "color": "#F2DF15"
+          			},
+          			{
+          				"id":"MX-HID"
+          			},
+          			{
+          				"id":"MX-JAL",
+                  "modalUrl": "jalisco.html",
+                  "selectable": true,
+                  "color": "#F32580"
+          			},
+          			{
+          				"id":"MX-MEX",
+                  "modalUrl": "mexico.html",
+                  "selectable": true,
+                  "color": "#F02849"
+          			},
+          			{
+          				"id":"MX-MIC",
+                  "modalUrl": "michoacan.html",
+                  "selectable": true,
+                  "color": "#9064C2"
+          			},
+          			{
+          				"id":"MX-MOR"
+          			},
+          			{
+          				"id":"MX-NAY"
+          			},
+          			{
+          				"id":"MX-NLE"
+          			},
+          			{
+          				"id":"MX-OAX"
+          			},
+          			{
+          				"id":"MX-PUE",
+                  "modalUrl": "puebla.html",
+                  "selectable": true,
+                  "color": "#8D0D21"
+          			},
+          			{
+          				"id":"MX-QUE",
+                  "modalUrl": "queretaro.html",
+                  "selectable": true,
+                  "color": "#26A8E7"
+          			},
+          			{
+          				"id":"MX-ROO"
+          			},
+          			{
+          				"id":"MX-SLP"
+          			},
+          			{
+          				"id":"MX-SIN"
+          			},
+          			{
+          				"id":"MX-SON"
+          			},
+          			{
+          				"id":"MX-TAB"
+          			},
+          			{
+          				"id":"MX-TAM"
+          			},
+          			{
+          				"id":"MX-TLA"
+          			},
+          			{
+          				"id":"MX-VER",
+                  "modalUrl": "veracruz.html",
+                  "selectable": true,
+                  "color": "#4CE2D5"
+          			},
+          			{
+          				"id":"MX-YUC"
+          			},
+          			{
+          				"id":"MX-ZAC"
+          			}
+              ]
+            },
+            "areasSettings": {
+          		"color": "#17476A",
+          		"selectable": true,
+              "selectedColor": "#444444",
+              "outlineColor": "#ffffff",
+              "rollOverOutlineColor": "#ffffff",
+              "alpha": 1,
+          	},
+          	"imagesSettings": {
+          		"alpha": 1,
+          		"selectable": true,
+              "outlineColor": "#ffffff",
+              "color": "#17476A"
+          	},
+          	"linesSettings": {
+          		"color": "#17476A",
+          		"selectable": true,
+          	},
+            "zoomControl": {
+              "zoomControlEnabled": false,
+              "zoomFactor": "0"
+            }
+          });
+          map.addListener("clickMapObject", function(event) {
+              console.log(event.mapObject.modalUrl);
+              if(event.mapObject.modalUrl == null || event.mapObject.modalUrl == "" || event.mapObject.modalUrl == "undefined"){
+                return;
+              }
+              window.location.href = event.mapObject.modalUrl;
+          });
         });
         </script>
     </body>

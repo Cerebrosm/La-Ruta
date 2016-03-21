@@ -256,6 +256,7 @@ p {
 #header{
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
+  overflow: hidden;
 }
 #principal {
 	text-align:center;
@@ -963,9 +964,14 @@ h3 {
   display: table;
   width: 100%;
 }
-
+.fullscreen-bg.hidden-xs.hidden-sm {
+    width: 105%;
+    height: 105%;
+    margin: -5% 0 0 -5%;
+    background: #fff;
+}
 .header-background {
-  background:url(../images/bg-3.jpg);
+  /*background:url(../images/bg-3.jpg);
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -973,18 +979,18 @@ h3 {
   background-position: center 0;
   background-attachment: fixed;
   background-repeat: 'no-repeat';
-  background-color: #FFF;
-  height: 100vh;
+  background-color: #FFF;*/
+  height: auto;
 }
 
 .header-background.cdmx{
-	background:url(../images/bg-2_cdmx.JPG);
+	//background:url(../images/bg-2_cdmx.JPG);
 }
 .header-background.recetas{
-	background:url(../images/bg-1.jpg);
+	//background:url(../images/bg-1.jpg);
 }
 .header-background.guerrero{
-	background:url(../images/bg-2_guerrero.jpg);
+	//background:url(../images/bg-2_guerrero.jpg);
 }
 
 .header .section-separator {
@@ -1001,6 +1007,12 @@ h3 {
   margin: auto;
   margin-bottom: 30px;
   padding: 10px 0 0 10px;
+}
+.header-background .visible-xs-block .gif-header,
+.header-background .visible-sm-block .img-header{
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .header h1 {
   color: #fff;
@@ -1647,6 +1659,17 @@ h3 {
 #mapa{
 	width:100%;
 	height:100%;
+  background: #17476A;
+  padding: 60px 0;
+}
+#mapdiv{
+  width: 800px;
+  height: 500px;
+  display: block;
+  margin: auto;
+}
+a[href="http://www.amcharts.com/javascript-maps/"]{
+  display: none!important;
 }
 /**
  * ===============================

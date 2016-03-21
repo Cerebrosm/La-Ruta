@@ -18,7 +18,7 @@
      background-attachment: fixed;
      background-repeat: 'no-repeat';
      background-color: #FFF;
-     height: 100vh;
+     height: auto;
  }
   .header-nav ul {
     margin: 0 -15px !important;
