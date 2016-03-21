@@ -9,6 +9,12 @@
 	 * Header Navbar Style
 	 * =============================
 	 */
+   #mapdiv {
+    width: 400px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
    .header-background {
      -webkit-background-size: cover;
      -moz-background-size: cover;

@@ -971,9 +971,9 @@ h3 {
   width: 100%;
 }
 .fullscreen-bg.hidden-xs.hidden-sm {
-    width: 105%;
-    height: 105%;
-    margin: -5% 0 0 -5%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     background: #fff;
 }
 .header-background {
