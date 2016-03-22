@@ -9,6 +9,9 @@
 	 * Header Navbar Style
 	 * =============================
 	 */
+   #header{
+     padding: 100px 0 0 0;
+   }
    #mapdiv {
     width: 400px;
     height: 500px;

@@ -9,7 +9,7 @@
 	$.fn.countdown = function(options){
 		//Variables that we are going to use
 		var dwcd_day, dwcd_hour, dwcd_minute, dwcd_second, dwcd_start_time, dwcd_end_time, dwcd_complete = false;
-		
+
 		//Set the default settings
 		var settings = $.extend({
 			start_time		: null,
@@ -48,13 +48,13 @@
 
 		//Check each countdown unit if it is set to display and create html element to display them.
 		if(settings.show_day)
-			dwcd_day = settings.wrapper('Days');
+			dwcd_day = settings.wrapper('Días');
 		if(settings.show_hour)
-			dwcd_hour = settings.wrapper('Hours');
+			dwcd_hour = settings.wrapper('Horas');
 		if(settings.show_minute)
-			dwcd_minute = settings.wrapper('Minutes');
+			dwcd_minute = settings.wrapper('Minutos');
 		if(settings.show_second)
-			dwcd_second = settings.wrapper('Seconds');
+			dwcd_second = settings.wrapper('Segundos');
 
 
 		//Update the countdown timer and progressbar on set interval.
@@ -92,21 +92,21 @@
 				dwcd_day.find('.counter').text(days);
 				left = left % (60 * 60 * 24);
 			}
-			
+
 			//Extract the hours and keep remaining minutes in the variable 'left'
 			var hours	= Math.floor(left / (60 * 60));
 			if(settings.show_hour){
 				dwcd_hour.find('.counter').text(hours);
 				left = left % (60 * 60);
 			}
-			
+
 			//Extract the minutes and keep remaining seconds in the variable 'left'
 			var minutes	= Math.floor(left / 60);
 			if(settings.show_minute){
 				dwcd_minute.find('.counter').text(minutes);
 				left = left % 60;
 			}
-			
+
 			//Whatever we have left is seconds.
 			var seconds	= Math.floor(left);
 			if(settings.show_second){
@@ -119,7 +119,7 @@
 				var spent_time	= Math.round(now - dwcd_start_time);//How much time already spent
 				var progress	= spent_time/total_time*100;//Percentage of progress
 				if(progress > 100)progress = 100;//Progress should never be more than 100%
-				
+
 				settings.update_progress(progress, settings.progress);//Call the progress update function
 			}
 		}
