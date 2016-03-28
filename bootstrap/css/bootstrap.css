@@ -5946,9 +5946,15 @@ button.close {
   margin: 0;
   line-height: 1.42857143;
 }
+.modal-img{
+  display: block;
+  margin: auto;
+}
 .modal-body {
   position: relative;
   padding: 15px;
+  overflow-y: auto;
+  max-height: calc(100vh - 140px);
 }
 .modal-footer {
   padding: 15px;

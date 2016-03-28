@@ -253,6 +253,12 @@ p {
   text-align:justify;
 }
 
+/*
+ * Modal
+ */
+.modal-title{
+  color: #1e8080;
+}
 #galeria{
   background: #ffffff;
   display: table;
@@ -1702,6 +1708,9 @@ h3 {
   display: block;
   margin: auto;
 }
+g[transform="translate(10,10)"]{
+  display: none!important;
+}
 a[href="http://www.amcharts.com/javascript-maps/"]{
   display: none!important;
 }
@@ -1737,7 +1746,7 @@ a[href="http://www.amcharts.com/javascript-maps/"]{
   display: inline-block !important;
 }
 .speakers-body .item a {
-  display: block;
+  /*display: block;*/
   text-decoration: none !important;
   color: #1e8080;
 }

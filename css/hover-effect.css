@@ -22,9 +22,13 @@
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-	background-color: rgba(48, 133, 163, 0.46);
+	/*background-color: rgba(48, 133, 163, 0.46);*/
+	background-color: transparent;
 }
-
+.grid figure a{
+	display: inline-block;
+	text-align: center;
+}
 .grid figure img {
 	position: relative;
 	display: block;
