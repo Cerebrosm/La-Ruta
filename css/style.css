@@ -2644,6 +2644,9 @@ footer .footer-body .copyright p .fa {
 .post-detail p {
   text-align: left !important;
 }
+.post-detail p.text-justify {
+  text-align: justify !important;
+}
 /**
  * ===================================
  * Video Post Style
