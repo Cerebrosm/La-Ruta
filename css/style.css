@@ -271,11 +271,9 @@ p {
   padding: 20px 0px;
 }
 #header{
-  -webkit-transition: background-image 0.5s ease-in-out;
-  transition: background-image 0.5s ease-in-out;
   overflow: hidden;
   padding: 115px 0 0 0;
-  background: #ffffff;
+  height: 100vh;
 }
 #header-body{
     position: absolute;
@@ -1005,7 +1003,8 @@ h3 {
     width: 100%;
     height: 100%;
     margin: 0;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.24);
+;
 }
 .header-background {
   /*background:url(../images/bg-3.jpg);
