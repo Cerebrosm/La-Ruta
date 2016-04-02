@@ -392,7 +392,7 @@ $(function() {
      * =========================================
      */
     $('.count_down-1').countdown({
-        end_time: "2016/04/07 14:27:28 +0600",
+        end_time: "2016/04/01 23:50:00 +0600",
         wrapper: function(unit){
             var wrpr = $('<div></div>').
                 addClass(unit.toLowerCase()+'_wrapper').
