@@ -552,6 +552,34 @@ $(function() {
         return false;
     });
 
+    $("#contact-recipt").submit(function(e) {
+        e.preventDefault();
+        var data = {
+            name: $("#recipt-name").val(),
+            email: $("#recipt-email").val(),
+            message: $("#recipt-message").val()
+        };
+
+
+
+        if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
+            $.ajax({
+                type: "POST",
+                url: "sendreceipt.php",
+                data: data,
+                success: function() {
+                    $('.email-success-receipt').delay(500).fadeIn(1000);
+                    $('.email-failed-receipt').fadeOut(500);
+                }
+            });
+        } else {
+            $('.email-failed-receipt').delay(500).fadeIn(1000);
+            $('.email-success-receipt').fadeOut(500);
+        }
+
+        return false;
+    });
+
 
 
     /**

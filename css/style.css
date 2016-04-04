@@ -272,8 +272,9 @@ p {
 }
 #header{
   overflow: hidden;
-  padding: 115px 0 0 0;
+  padding: 110px 0 0 0;
   height: 100vh;
+  background: #fff;
 }
 #header-body{
     position: absolute;
@@ -1178,12 +1179,15 @@ h3 {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
-.contact-maps-box .btn {
+.contact-maps-box .btn,
+#contact-recipt .btn {
   width: 100%;
   margin: 0px 0px;
 }
 .contact-maps-box .btn:hover,
-.contact-maps-box .btn:focus {
+.contact-maps-box .btn:focus,
+#contact-recipt .btn:hover,
+#contact-recipt .btn:focus {
   color: #fff;
 }
 .contact-maps-box form {
@@ -1472,7 +1476,9 @@ h3 {
 .subscription-success,
 .subscription-failed,
 .email-success,
-.email-failed {
+.email-failed,
+.email-success-receipt,
+.email-failed-receipt {
   font-size: 17px;
   font-family: 'Raleway', sans-serif;
   display: none;
@@ -1480,7 +1486,8 @@ h3 {
   margin: 0 0 0 0 !important;
 }
 .subscription-failed,
-.email-failed {
+.email-failed,
+.email-failed-receipt {
   color: #E04343 !important;
 }
 /**

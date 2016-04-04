@@ -666,7 +666,7 @@
                             <div class="view grid">
                                 <figure class="effect-zoe" onClick="window.location = 'cdmx.html'">
 
-                                    
+
                                     <!-- Image Goes Here -->
                                     <img class="img-responsive" src="images/speakers-img/8.jpg" alt="speakers"/>
 
@@ -758,8 +758,12 @@
                     <div class="our-featured-video col-md-10 col-md-offset-1 wow fadeInDown">
 
                         <!--  Start: Video Area  "PASTE YOUR VIDEO LINK HERE " -->
-                        <div class="video">
-                           <iframe class="video-async" data-source="vimeo" data-video="89035281" data-color="3AC353" allowfullscreen="" src="https://player.vimeo.com/video/89035281?color=3AC353"></iframe> <!--  Video Link Goes Here-->
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video width="100%" height="100%" poster="videos/intro.png" controls>
+                            <source src="videos/intro.mp4" type="video/mp4">
+                            <source src="videos/intro.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                          </video>
                         </div>
                         <!--  End: Video Area  -->
 
@@ -834,41 +838,82 @@
 
                                     <!-- Post video Goes Here -->
                                     <!--  Start: Video Area  "PASTE YOUR VIDEO LINK HERE " -->
-                                    <div class="video">
-                                       <iframe class="video-async" data-source="vimeo" data-video="89035281" data-color="3AC353" allowfullscreen="" src="https://player.vimeo.com/video/89035281?color=3AC353"></iframe> <!--  Video Link Goes Here-->
+                                    <div class="slider-bar col-xs-12">
+                                        <div class="row">
+                                            <div class="flexslider">
+                                                <ul class="slides slides-height auto-height">
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-reunion-01.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-reunion-02.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-reunion-03.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-reunion-04.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-reunion-05.jpg" alt="" title=""/>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!--  End: Video Area  -->
 
                                     <div class="caption">
                                         <a href="blog-video.html">
                                             <!-- Post Heading -->
-                                            Video Blog Post Header Here
+                                            Reunión con los coordinadores de Comepesca
                                         </a>
                                         <!-- Post detail -->
-                                        <p class="post-comment">Lorem ipsum dolor sit amet event landing template, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. ipsum dolor sit amet event landing template...</p>
+                                        <p class="post-comment"></p>
 
                                         <!-- Post date -->
-                                        <p class="date-of-post">17th May 2014</p>
+                                        <p class="date-of-post">26 Feb 2016</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Blog Post 3 -->
-                            <div class="col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="thumbnail blog-post">
 
-                                    <!-- Post Image Goes Here -->
-                                    <img class="img-responsive" alt="" src="images/blog/post-3.jpg" class="img-responsive">
+                                    <div class="slider-bar col-xs-12">
+                                        <div class="row">
+                                            <div class="flexslider">
+                                                <ul class="slides slides-height auto-height">
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-coordinadores-01.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-coordinadores-02.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-coordinadores-03.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-coordinadores-04.jpg" alt="" title=""/>
+                                                    </li>
+                                                    <li>
+                                                        <img class="" src="images/noticia/noticia-coordinadores-05.jpg" alt="" title=""/>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="caption">
                                         <a href="blog-image.html">
                                             <!-- Post Heading -->
-                                            Image Blog Post Header Here
+                                            Reunión Comepesca
                                         </a>
                                         <!-- Post detail -->
-                                        <p class="post-comment">Lorem ipsum dolor sit amet event landing template, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt...</p>
+                                        <p class="post-comment"></p>
                                         <!-- Post date -->
-                                        <p class="date-of-post">17th May 2014</p>
+                                        <p class="date-of-post">26 Feb 2016</p>
 
                                     </div>
                                 </div>
@@ -1282,14 +1327,15 @@
               "map": "mexicoLow",
               "areas": [
                 {
-          				"id":"MX-AGU",
-                  "color": "#17476A"
+          				"id":"MX-AGU"
           			},
           			{
           				"id":"MX-BCN",
                   "modalUrl": "tijuana.html",
                   "selectable": true,
-                  "color": "#AD00AD"
+                  "color": "#AD00AD",
+                  "title": "Baja California",
+                  "valueField": "Baja California"
           			},
           			{
           				"id":"MX-BCS"
@@ -1313,7 +1359,9 @@
           				"id":"MX-DIF",
                   "modalUrl": "cdmx.html",
                   "selectable": true,
-                  "color": "#3CFF0F"
+                  "color": "#3CFF0F",
+                  "title": "CDMX",
+                  "valueField": "CDMX"
           			},
           			{
           				"id":"MX-DUR"
@@ -1325,28 +1373,36 @@
           				"id":"MX-GRO",
                   "modalUrl": "guerrero.html",
                   "selectable": true,
-                  "color": "#F2DF15"
+                  "color": "#F2DF15",
+                  "title": "Guerrero",
+                  "valueField": "Guerrero"
           			},
           			{
           				"id":"MX-HID"
           			},
           			{
           				"id":"MX-JAL",
-                  "modalUrl": "jalisco.html",
+                  "modalUrl": "guadalajara.html",
                   "selectable": true,
-                  "color": "#F32580"
+                  "color": "#F32580",
+                  "title": "Jalisco",
+                  "valueField": "Jalisco"
           			},
           			{
           				"id":"MX-MEX",
                   "modalUrl": "metepec.html",
                   "selectable": true,
-                  "color": "#F02849"
+                  "color": "#F02849",
+                  "title": "Estado de México",
+                  "valueField": "Estado de México"
           			},
           			{
           				"id":"MX-MIC",
                   "modalUrl": "michoacan.html",
                   "selectable": true,
-                  "color": "#9064C2"
+                  "color": "#9064C2",
+                  "title": "Michoacán",
+                  "valueField": "Michoacán"
           			},
           			{
           				"id":"MX-MOR"
@@ -1364,13 +1420,17 @@
           				"id":"MX-PUE",
                   "modalUrl": "puebla.html",
                   "selectable": true,
-                  "color": "#8D0D21"
+                  "color": "#8D0D21",
+                  "title": "Puebla",
+                  "valueField": "Puebla"
           			},
           			{
           				"id":"MX-QUE",
                   "modalUrl": "queretaro.html",
                   "selectable": true,
-                  "color": "#26A8E7"
+                  "color": "#26A8E7",
+                  "title": "Querétaro",
+                  "valueField": "Querétaro"
           			},
           			{
           				"id":"MX-ROO"
@@ -1394,7 +1454,12 @@
           				"id":"MX-TLA"
           			},
           			{
-          				"id":"MX-VER"
+          				"id":"MX-VER",
+                  "modalUrl": "veracruz.html",
+                  "selectable": true,
+                  "color": "#4CE2D5",
+                  "title": "Veracruz",
+                  "valueField": "Veracruz"
           			},
           			{
           				"id":"MX-YUC"

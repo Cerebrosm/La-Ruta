@@ -12,20 +12,21 @@ http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
 .flexslider a:active {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
 /* FlexSlider Necessary Styles
-*********************************/ 
+*********************************/
 .flexslider {width: 100%; margin: 0;}
 .flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {min-width: 100%; min-height: 100%; display: block; border:0px #ededed solid;opacity: 0.9;}
 .flex-pauseplay span {text-transform: capitalize;}
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block;} 
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
 * html .slides {height: 1%;}
 .no-js .slides > li:first-child {display: block;}
 .flexslider {position: relative; zoom: 1; overflow: hidden;}
 .flexslider .slides {zoom: 1;}
+.auto-height{ height: auto!important; }
 .flexslider .slides > li {position: relative;}
 .flex-container {zoom: 1; position: relative;}
 
