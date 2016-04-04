@@ -555,14 +555,16 @@ $(function() {
     $("#contact-recipt").submit(function(e) {
         e.preventDefault();
         var data = {
-            name: $("#recipt-name").val(),
-            email: $("#recipt-email").val(),
-            message: $("#recipt-message").val()
+            ingredientes: $("#ingredientes").val(),
+            preparacion: $("#preparacion").val(),
+            rnombre: $("#rnombre").val(),
+            rcorreo: $("#rcorreo").val(),
+            rautor: $("#rautor").val()
         };
 
 
 
-        if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
+        if ( isValidEmail(data['rcorreo']) && (data['ingredientes'].length > 1) && (data['preparacion'].length > 1) && (data['rnombre'].length > 1) && (data['rautor'].length > 1) ) {
             $.ajax({
                 type: "POST",
                 url: "sendreceipt.php",
