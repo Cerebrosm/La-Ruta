@@ -4277,10 +4277,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 0;
   font-size: 18px;
   line-height: 20px;
 }
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: table;
+  }
+  .navbar-brand span img{
+    width: 100px!important;
+  }
+}
+
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;

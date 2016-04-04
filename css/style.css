@@ -868,7 +868,6 @@ h3 {
   transition: all 0.4s ease-out;
 }
 .header-nav-2 .navbar-header a img {
-  width: 190px;;
   margin: auto;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1049,7 +1048,7 @@ h3 {
   height:500px;
 }
 .header img {
-  width: 150px;
+  width: 120px;
   margin: auto;
   margin-bottom: 30px;
   padding: 10px 0 0 10px;
