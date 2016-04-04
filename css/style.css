@@ -376,6 +376,9 @@ h3 {
   height: 2px;
   width: 120px;
 }
+.section-heading.margin-top-fixed{
+  margin-top: 15px;
+}
 /**
  * ===============================
  *  Section Top and Bottom padding
