@@ -276,6 +276,9 @@ p {
   height: 100vh;
   background: #fff;
 }
+.header-auto{
+  height: auto!important;
+}
 #header-body{
     position: absolute;
     z-index: 99;
