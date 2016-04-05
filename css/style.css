@@ -285,7 +285,8 @@ p {
     top: 0;
     width: 100%;
 }
-#principal {
+#principal,
+#principal2 {
 	text-align:center;
   color: #fff;
   font-size: 19px;
